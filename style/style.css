@@ -1,0 +1,145 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 100vh;
+    background: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg") hsl(185, 75%, 39%);
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+    background-repeat: no-repeat;
+  }
+  
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    
+  }
+
+  .user-card {
+    background: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  } 
+  
+  /* .user-card {
+    background: white;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  } 
+  
+  .card-image {
+    background: url(../images/bg-pattern-card.svg) hsl(185, 75%, 39%);
+    height: 40%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .user-photo {
+    background: url(../images/image-victor.jpg),  yellow;
+    shape-outside: circle();
+    clip-path: circle();
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+    bottom: 2.5rem;
+    left: 6.3rem;
+    border: solid #ffffff 3px;
+  }
+  
+  .user {
+    background: green;
+    height: 40%;
+    
+  }
+  
+  .user-numbers {
+    background: purple;
+    height: 20%;
+    border-top: 2px solid grey;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  } */
+
+@media screen and (min-width: 375px) {
+  .user-card {
+    background: rgb(202, 80, 226);
+    min-width: 375px;
+    width: 60vw;
+    height: 50vh;
+  } 
+}
+
+@media screen and (min-width: 768px) {
+  .user-card {
+    background: rgb(156, 214, 134);
+    width: 40vw;
+    height: 30vh;
+  } 
+ }
+
+@media screen and (min-width: 1024px) {
+    .user-card {
+      background: rgb(194, 164, 33);
+      width: 15vw;
+      height: 30vh;
+  }
+}
+
+/* .user-card {
+  background: white;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}  */
+
+.card-image {
+  background: url(../images/bg-pattern-card.svg) hsl(185, 75%, 39%);
+  height: 40%;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.user-photo {
+  background: url(../images/image-victor.jpg),  yellow;
+  shape-outside: circle();
+  clip-path: circle();
+  width: 5rem;
+  height: 5rem;
+  position: relative;
+  /*bottom: 2.5rem;
+  left: 6.3rem;*/
+  border: solid #ffffff 3px;
+}
+
+.user {
+  height: 40%;
+  
+}
+
+.user-numbers {
+  height: 20%;
+  border-top: 2px solid grey;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background: pink;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center;
+  width: 100vw;
+  
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
