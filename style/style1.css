@@ -35,7 +35,7 @@ h4, h5, h6 {
 /* Media Queries */
 @media screen and (min-width: 375px) {
     .user-card {
-      background: rgb(202, 80, 226);
+      background: #ffffff;
       min-width: 375px;
       width: 60vw;
       height: auto;} 
@@ -43,14 +43,14 @@ h4, h5, h6 {
   
 @media screen and (min-width: 768px) {
     .user-card {
-      background: rgb(156, 214, 134);
-      width: 40vw;
-      height: auto;} 
+        background: #ffffff;
+        width: 40vw;
+        height: auto;} 
 }
   
 @media screen and (min-width: 1024px) {
     .user-card {
-        background: rgb(194, 164, 33);
+        background: #ffffff;
         width: 15vw;
         height: auto;
         margin: 0 auto;}
@@ -65,8 +65,7 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
-    background-color: blueviolet;}
+    margin: 0 auto;}
 
 .user-card {
     border-radius: 10px;}
@@ -86,6 +85,52 @@ main {
     left: 50%;
     transform: translate(-50%, -50%);}
 
+    
+/* Grid Layout */
+.user-info {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid: 
+        "name name age" 3fr
+        "city city city" 1fr
+        "followers likes photos" 1fr
+        "folllowers-N likes-N photos-N" 1fr 
+        / 1fr 1fr 1fr;
+    justify-items: center;
+    text-align: center;
+    align-items: center;}
+
+.name {
+    grid-area: name;}
+
+.age {
+    grid-area: age;}
+
+.city {
+    grid-area: city;
+    margin-bottom: 0.1em;}
+
+.followers {
+    grid-area: followers;}
+
+.likes {
+    grid-area: likes;}
+
+.photos {
+    grid-area: photos;}
+
+.followers-N {
+    grid-area: followers-N;}
+
+.likes-N {
+    grid-area: likes-N;}
+
+.photos-N {
+    grid-area: photos-N;}
+
+    
+/* Footer */
 .attribution { 
         font-size: 11px; 
         text-align: center;
