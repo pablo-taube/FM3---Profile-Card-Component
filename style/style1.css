@@ -20,8 +20,11 @@ main {
 h3 {
     font-size: 18px;}
 
-h4, h5 {
+h4 {
     font-weight: 700;}
+
+h5 {
+    font-weight: 500;}
 
 h6 {
     font-weight: 400;}
@@ -78,11 +81,12 @@ main {
         border-top-right-radius: 10px;}
 
 .user-photo {
+    border: solid 5px #ffffff;
     border-radius: 50px;
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 46%;
+    left: 51%;
     transform: translate(-50%, -50%);}
 
     
@@ -102,14 +106,21 @@ main {
     align-items: center;}
 
 .name {
-    grid-area: name;}
+    grid-area: name;
+    margin-top: 3em;
+    margin-left: 50%;}
 
 .age {
-    grid-area: age;}
+    grid-area: age;
+    margin-top: 3.5em;
+    margin-right: 80%;}
 
 .city {
     grid-area: city;
-    margin-bottom: 0.1em;}
+    width: 100%;
+    padding-bottom: 3px;
+    margin-bottom: 1em;
+    border-bottom: solid 2px #e9ecef;}
 
 .followers {
     grid-area: followers;}
